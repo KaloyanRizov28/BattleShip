@@ -1,0 +1,45 @@
+.win-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.win-content h2 {
+    font-size: 4rem;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.restart-button {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.restart-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 0, 0, 0.8),
+                     0 0 30px rgba(255, 0, 0, 0.6);
+    }
+}
