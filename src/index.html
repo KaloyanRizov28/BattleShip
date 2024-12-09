@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship Game</title>
+    
+</head>
+<body>
+    <header class="header">
+    </header>
+    <div class="container">
+        <h2>Welcome to Battleship</h2>
+        <p>Prepare for an epic naval battle! Are you ready to sink your opponent's fleet?</p>
+        
+        <div class="rules-container">
+            <h3>How to Play:</h3>
+            <ol>
+                <li>Place your ships by dragging and dropping.</li>
+                <li>Your fleet is stationed on the left grid with your ships in position</li>
+                <li>Take aim at the enemy grid (right side) by clicking to fire</li>
+                <li>Wait for the enemy's counter-attack after your turn</li>
+                <li>First to sink all enemy ships wins the battle</li>
+            </ol>
+
+            <h3>Battle Legend:</h3>
+            <div class="color-legend">
+                <div class="color-item">
+                    <div class="color-box ship-color"></div>
+                    <span>Your Ships - Fleet Position</span>
+                </div>
+                <div class="color-item">
+                    <div class="color-box miss-color"></div>
+                    <span>Miss - Shot Hit Water</span>
+                </div>
+                <div class="color-item">
+                    <div class="color-box hit-color"></div>
+                    <span>Hit - Direct Strike!</span>
+                </div>
+            </div>
+
+            <h3>Combat Tips:</h3>
+            <ul>
+                <li>When you score a hit, target adjacent squares to find the rest of the ship</li>
+                <li>The enemy will focus their fire around successful hits</li>
+                <li>Already targeted locations cannot be fired upon again</li>
+                <li>The grid is locked during enemy turns - stay alert!</li>
+            </ul>
+        </div>
+
+        <button class="start-button" id="startGameButton">Launch Battle</button>
+    </div>
+</body>
+</html>
+
+
