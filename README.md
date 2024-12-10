@@ -3,6 +3,7 @@
 A TypeScript implementation of the classic Battleship game with drag-and-drop ship placement and AI opponent. This project was created as a learning exercise to practice TypeScript, object-oriented programming, and front-end development.
 
 live link - https://kaloyanrizov28.github.io/BattleShip/
+![image](https://github.com/user-attachments/assets/63a1fc25-5332-4e20-8482-0c74ec1f67f5)
 
 ## 🚢 Features
 
