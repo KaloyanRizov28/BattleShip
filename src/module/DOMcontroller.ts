@@ -35,17 +35,16 @@ export function showBattleMessage(message: string, duration: number = 5500) {
   messageDisplay.style.display = 'block';
   messageDisplay.style.opacity = '0';
   
-  // Fade in
+  
   setTimeout(() => {
       messageDisplay.style.opacity = '1';
   }, 100);
 
-  // Start fade out
   setTimeout(() => {
       messageDisplay.style.opacity = '0';
   }, duration - 1000);
 
-  // Hide element after fade out
+  
   setTimeout(() => {
       messageDisplay.style.display = 'none';
   }, duration);
@@ -84,7 +83,7 @@ export function createGrid(player: Player, gridId: string, isEnemyOrComp: boolea
               }
 
               cell.addEventListener("click", async () => {
-                  // Check if grid is clickable
+                  
                   if (grid.style.pointerEvents === 'none') {
                       return;
                   }
@@ -96,11 +95,10 @@ export function createGrid(player: Player, gridId: string, isEnemyOrComp: boolea
                   
                   const shipPresent = player.board.tiles[i][j] > 0 && player.board.tiles[i][j] !== 9;
                   
-                  // Disable both grids during player turn
                   toggleGridClickable('grid1', false);
                   toggleGridClickable('grid2', false);
 
-                  // Show aiming message
+                  
                   showBattleMessage("Taking aim...", 2000);
                   
                   await new Promise(resolve => setTimeout(resolve, 2000));

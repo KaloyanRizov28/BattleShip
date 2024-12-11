@@ -11,7 +11,7 @@ export class DragDropTouch {
         }
         DragDropTouch.instance = this;
 
-        // Listen to touch events
+        
         document.addEventListener('touchstart', this._touchstart.bind(this));
         document.addEventListener('touchmove', this._touchmove.bind(this));
         document.addEventListener('touchend', this._touchend.bind(this));
